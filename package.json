@@ -1,0 +1,30 @@
+{
+  "name": "luxestore-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Luxestore e-commerce platform",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "migrate": "knex migrate:latest",
+    "seed": "knex seed:run"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cloudinary": "^1.37.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^2.5.1",
+    "pg": "^8.11.1",
+    "stripe": "^14.24.0",
+    "multer": "^1.4.5-lts.1",
+    "axios": "^1.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
