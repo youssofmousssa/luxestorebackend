@@ -19,5 +19,9 @@ function requireAdmin(req, res, next) {
   next();
 }
 
-module.exports = { requireAuth, requireAdmin };
+// aliases for backward compatibility with older route files
+const authenticate = requireAuth;
+const authorizeAdmin = requireAdmin;
+
+module.exports = { requireAuth, requireAdmin, authenticate, authorizeAdmin };
 
